@@ -13,10 +13,10 @@ def write_txt(filepath, text):
         f.write(text)
 
 def main():
-    st.image("https://cdn.pixabay.com/photo/2017/01/31/13/50/headphones-2024215_1280.png", width=150)
+    st.image("https://static.thenounproject.com/png/171-200.png", width=150)
     st.title("Hani Script Extractor")
     st.subheader("Convert MP3 to TXT")
-    st.markdown("오픈AI의 오픈소스 인공지능 STT(Speech-to-Text) 모델인 [Whisper](https://github.com/openai/whisper)를 활용했습니다. ")
+    st.markdown("오픈AI의 [Whisper](https://github.com/openai/whisper)를 개선한 [Fast Whisper](https://github.com/SYSTRAN/faster-whisper)를 활용했습니다. ")
 
     # whisper model 선택
     whisper_model = st.selectbox("모델을 선택해주세요.(base나 small을 권장합니다. medium과 large는 스크립트 추출 속도가 느려지거나 오류가 날 수 있습니다.)", ('tiny', 'base', 'small', 'medium', 'large', 'large-v1', 'large-v2'))
